@@ -14,6 +14,9 @@
   </thead>
   <tbody>
     <div class="well">
+    <%= @person.organizations.each do |org| %>
+    <%= link_to org.name, org %>
+    <% end %>
       Replace me with a list of organization names that this person is connected to,
       via employments.
     </div>
